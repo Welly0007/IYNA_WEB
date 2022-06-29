@@ -33,7 +33,7 @@
     --font-weight-black:          900;
   }
   body{
-    background-image: url(../Images/upper_background.png),url(../Images/lower_background.png);
+    background-image: url(../images/upper_background.png),url(../images/lower_background.png);
     background-color: var(--second-color-plate);
     background-repeat: no-repeat,repeat;
     background-position: center top, center;
