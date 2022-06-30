@@ -33,11 +33,11 @@
     --font-weight-black:          900;
   }
   body{
-    background-image: url(../images/upper_background.png),url(../images/lower_background.png);
+    background-image: url(../resources/upper_background.png),url(../resources/lower_background.png);
     background-color: var(--second-color-plate);
-    background-repeat: no-repeat,repeat;
-    background-position: center top, center;
-    /* height: 5000vh; */
+    background-repeat: repeat-x,repeat;
+    max-width: auto;
+    background-position: left top, center;
   }
   header{
     top: 0;
@@ -81,11 +81,14 @@ header a:hover::after{
     text-transform: uppercase;
 }
 #container{
-    width: 70%;
+    width: 100%;
+    padding: 0 5%;
     margin: 0 auto;
+    min-height: 100%;
+    position: relative;
 }
 .welcome_sec{
-    position: relative;
+    /* position: relative; */
     margin-top: 250px;
     margin-bottom: 290px;
 }
@@ -98,7 +101,7 @@ header a:hover::after{
     color: var(--first-color-plate);
 }
 #browse_issues_butt{
-    position: relative;
+    /* position: relative; */
     font: var(--font-weight-bold) 16pt var(--inter-font-family);
     width: 200px;
     height: 50px;
@@ -125,7 +128,7 @@ header a:hover::after{
     animation: none;
 }
  .intro_sec{
-    position:relative;
+    /* position:relative; */
     width: 100%;
     height: max-content;
     margin-bottom: 270px;
@@ -157,12 +160,18 @@ header a:hover::after{
             color: var(--first-color-plate);
             font-weight: 700;
 }
+.our_team{
+    width: max-content;
+    /* position: relative; */
+    margin: 0 auto;
+}
 .our_team h3{
 font: var(--font-weight-extrabold) 36pt inter;
 color: var(--first-color-plate);
 text-align: center;
 text-transform: capitalize;
 animation: glow 1s ease-in-out infinite alternate;
+margin: 0 auto;
 }
 @-webkit-keyframes glow {
     from {
@@ -223,8 +232,9 @@ transition: all 0.7s;
     background-position: center;
 }
 #Contact_cont{
-    width: 1048px;
-    height: 588px;
+    width: max-content;
+    height: max-content;
+    min-width: 908px;
     background-color: #7d00e3;
     margin: 264px auto 180px;
     border-radius: 9px;
@@ -319,6 +329,7 @@ footer{
     height: 178px;
     background-color: #380265;
     justify-content: space-around;
+    bottom: 0px;
 }
 .copyrights , .developers_f{
     display: flex;
@@ -335,3 +346,9 @@ footer{
     font: var(--font-weight-regular) 14pt inter;
     color: var(--white-color);
 }
+@media only screen and (max-width: 1110px) {
+    .hi-slide{
+        width: 754px;
+        height: 399px;
+    }
+  }
