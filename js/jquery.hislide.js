@@ -10,35 +10,35 @@ if(query.matches){
             };
             $.extend(true, setting, options);
             var states = [
-                { $zIndex: 0, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 1, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 2, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 3, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 4, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 5, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 6, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 7, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 8, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 9, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 10, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 11, width: 120, height: 150, top: 69, left: 700, $opacity: 0 },
-                { $zIndex: 12, width: 130, height: 170, top: 59, left: 700, $opacity: 0 },
-                { $zIndex: 13, width: 200, height: 302, top: 35, left: 0, $opacity: 0.8 },
-                { $zIndex: 14, width: 268, height: 399, top: 0, left: 235, $opacity: 1 },
-                { $zIndex: 13, width: 200, height: 302, top: 35, left: 538, $opacity: 0.8 },
-                { $zIndex: 12, width: 130, height: 170, top: 59, left: 700, $opacity: 0.0 },
-                { $zIndex: 11, width: 120, height: 150, top: 69, left: 700, $opacity: 0 },
-                { $zIndex: 10, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 9, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 8, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 7, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 6, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 5, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 4, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 3, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 2, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 1, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 0, width: 0, height: 0, top: 79, left: 700, $opacity: 0 }
+                { $zIndex: 0, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 1, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 2, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 3, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 4, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 5, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 6, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 7, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 8, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 9, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 10, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 11, width: 0, height: 150, top: 69, left: 400, $opacity: 0 },
+                { $zIndex: 12, width: 0, height: 170, top: 59, left: 400, $opacity: 0 },
+                { $zIndex: 13, width: 0, height: 252, top: 35, left: 400, $opacity: 0 },
+                { $zIndex: 14, width: 218, height: 349, top: 0, left: 0, $opacity: 1 },
+                { $zIndex: 13, width: 218, height: 349, top: 0, left: 248, $opacity: 1 },
+                { $zIndex: 12, width: 0, height: 170, top: 59, left: 400, $opacity: 0.0 },
+                { $zIndex: 11, width: 0, height: 150, top: 69, left: 400, $opacity: 0 },
+                { $zIndex: 10, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 9, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 8, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 7, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 6, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 5, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 4, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 3, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 2, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 1, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 0, width: 0, height: 0, top: 79, left: 400, $opacity: 0 }
             ];
     
             var $lis = $ele.find('li');
@@ -52,15 +52,15 @@ if(query.matches){
                 states.push(states.shift());
                 move();
             });
-            $ele.on('mouseenter', function() {
+            $ele.on('mouseover', function() {
                 clearInterval(timer);
                 timer = null;
-            }).on('mouseleave', function() {
+            }).on('mouseout', function() {
                 autoPlay();
             });
     
             move();
-            // autoPlay();
+            autoPlay();
             function move() {
                 $lis.each(function(index, element) {
                     var state = states[index];
