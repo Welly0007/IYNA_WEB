@@ -301,7 +301,7 @@ input:focus,textarea:focus{
 }
 #contact_form textarea{
     margin-top: 3px;
-    width: max-content;
+    width: 100%;
     height: 257.18px;
     border-radius: 3px;
     background-color: #e1d9e8;
@@ -352,6 +352,12 @@ footer{
     .hi-slide{
         width: 500px;
         height: 399px;
+    }
+    .hi-slide .hi-prev{
+        left: -30px;
+    }
+    .hi-slide .hi-next{
+        right: -30px;
     }
     #Contact_cont{
         min-width: 500px;
