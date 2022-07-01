@@ -73,7 +73,7 @@ background-color: var(--first-color-plate);
 height: 3px;
 width: 0%;
 left: 0;
-bottom: -1px;
+bottom: -5px;
 }
 header a:hover::after{
     width: 100%;
@@ -90,7 +90,7 @@ header a:hover::after{
 .welcome_sec p{
     margin-bottom: 35px;
     color: var(--white-color);
-    font: var(--font-weight-black) 52pt var(--inter-font-family);
+    font: var(--font-weight-black) 42pt var(--inter-font-family);
 }
 .welcome_sec span{
     color: var(--first-color-plate);
@@ -339,13 +339,13 @@ footer{
         margin-bottom: 100px;
     }
     .intro_sec h3{
-        font: var(--font-weight-extrabold) 16pt var(--inter-font-family);
+        font: var(--font-weight-extrabold) 15pt var(--inter-font-family);
         color: var(--first-color-plate);
         text-transform: capitalize;
         margin-bottom: 30px;
     }
     .intro_sec {
-        font: var(--font-weight-regular) 10pt var(--inter-font-family);
+        font: var(--font-weight-regular) 8pt var(--inter-font-family);
         color: var(--white-color);
     }
     .intro_sec h3{
