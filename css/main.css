@@ -33,12 +33,15 @@
     --font-weight-black:          900;
   }
   body{
-    background-image: url(../resources/upper_background.png),url(../resources/lower_background.png);
-    background-color: var(--second-color-plate);
-    background-repeat: repeat-x,repeat;
-    max-width: auto;
-    background-position: left top, center;
+    background: url(../resources/upper_background.png) no-repeat, url(../resources/lower_background.png) repeat;
+    /* background-color: var(--second-color-plate); */
+    background-size: contain;
   }
+  #container{
+    width: 100%;
+    padding: 0 15%;
+    margin: 0 auto;
+}
   header{
     top: 0;
     z-index: 999;
@@ -61,8 +64,7 @@
     text-decoration: none;
     color: var(--white-color);
     margin-left: 35px;
-    font: regular 18pt organetto;
-    padding-bottom: 5px;
+    font: var(--font-weight-regular) 12pt organetto;
   }
   header a:after{
 content: "";
@@ -80,17 +82,10 @@ header a:hover::after{
 #nav_but{
     text-transform: uppercase;
 }
-#container{
-    width: 100%;
-    padding: 0 5%;
-    margin: 0 auto;
-    min-height: 100%;
-    position: relative;
-}
 .welcome_sec{
-    /* position: relative; */
+
     margin-top: 250px;
-    margin-bottom: 290px;
+    margin-bottom: 270px;
 }
 .welcome_sec p{
     margin-bottom: 35px;
@@ -101,13 +96,10 @@ header a:hover::after{
     color: var(--first-color-plate);
 }
 #browse_issues_butt{
-    /* position: relative; */
-    font: var(--font-weight-bold) 16pt var(--inter-font-family);
+    font: var(--font-weight-bold) 14pt var(--inter-font-family);
     width: 200px;
     height: 50px;
     background-color: var(--first-color-plate);
-    border: none;
-    padding: 0;
     color: var(--white-color);
     border-radius: 3px;
     cursor: pointer;
@@ -124,29 +116,24 @@ header a:hover::after{
 }
 #browse_issues_butt:hover{
     box-shadow: 0 0 35px var(--first-color-plate);
-    transition: 0.3s;
     animation: none;
 }
  .intro_sec{
-    /* position:relative; */
     width: 100%;
-    height: max-content;
-    margin-bottom: 270px;
+    margin-bottom: 150px;
 }
 .intro_sec h3{
-    font: var(--font-weight-extrabold) 36pt var(--inter-font-family);
+    font: var(--font-weight-extrabold) 26pt var(--inter-font-family);
     color: var(--first-color-plate);
     text-transform: capitalize;
     margin-bottom: 30px;
 }
 .intro_sec {
-    font: var(--font-weight-light) 24pt var(--inter-font-family);
+    font: var(--font-weight-regular) 16pt var(--inter-font-family);
     color: var(--white-color);
-    justify-content: flex-start;
-    /* letter-spacing: 0.7px; */
 }
 #who_we_are{
-    margin-bottom: 75px;
+    margin-bottom: 45px;
 }
 #our_vision ol{
     counter-reset: item; 
@@ -160,18 +147,12 @@ header a:hover::after{
             color: var(--first-color-plate);
             font-weight: 700;
 }
-.our_team{
-    width: max-content;
-    /* position: relative; */
-    margin: 0 auto;
-}
 .our_team h3{
 font: var(--font-weight-extrabold) 36pt inter;
 color: var(--first-color-plate);
 text-align: center;
 text-transform: capitalize;
 animation: glow 1s ease-in-out infinite alternate;
-margin: 0 auto;
 }
 @-webkit-keyframes glow {
     from {
@@ -180,23 +161,21 @@ margin: 0 auto;
     to{
         text-shadow: 0 0 20px var(--first-color-plate);
     }
-
 }
 .hi-slide{
     position: relative;
-    width: 908px;
-    height: 449px;
+    width: 758px;
+    height: 399px;
     margin: 30px auto 0;
 }
 .hi-slide .hi-next,
 .hi-slide .hi-prev{
 position: absolute;
 top: 50%;
-transform: translateX(-50%);
-width: 40px;
-height: 40px;
-margin-top: -20px;
-line-height: 40px;
+transform: translatey(-50%);
+width: 70px;
+height: 70px;
+line-height: 80px;
 text-align: center;
 cursor: pointer;
 transition: all 0.7s;
@@ -207,13 +186,12 @@ transition: all 0.7s;
 .hi-slide .hi-next{
     right: -70px;
 }
+
 .hi-slide > ul{
     list-style: none;
     position: relative;
-    width: 500px;
-    height: 292px;
-    margin: 0;
-    padding: 0;
+    width: 758px;
+    height: 399px;
 }
 .hi-slide > ul> li{
     overflow: hidden;
@@ -221,23 +199,17 @@ transition: all 0.7s;
     z-index: 0;
     left: 377px;
     top:147px;
-    width: 0;
-    height: 0;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
 }
 .hi-slide > ul > li > img{
     width: 100%;
     height: 100%;
-    background-position: center;
 }
 #Contact_cont{
-    width: max-content;
+    width: min-content;
     height: max-content;
-    min-width: 908px;
+    min-width: 758px;
     background-color: #7d00e3;
-    margin: 264px auto 180px;
+    margin: 150px auto 100px;
     border-radius: 9px;
     padding: 40px;
 }
@@ -250,14 +222,13 @@ transition: all 0.7s;
     color:var(--white-color);
     text-transform: capitalize;
     margin-bottom: 100px;
-
 }
 .Contact_pages{
     display: flex;
     flex-direction: column;
 }
 .Contact_pages a{
-    font: var(--font-weight regular) 18pt inter;
+    font: var(--font-weight-regular) 11pt inter;
     color: var(--white-color);
     text-decoration: none;
     display: flex;
@@ -268,13 +239,14 @@ transition: all 0.7s;
     margin-right: 4%;
 }
 .send_box{
-    width: 405px;
+    width: fit-content;
     height: 511px;
     border-radius: 9px;
     background-color: var(--white-color);
     display: flex;
     flex-direction: column;
     padding: 35px;
+    margin-left: 5%;
 
 }
 #contact_form input{
@@ -287,11 +259,11 @@ transition: all 0.7s;
 }
 #contact_form input::placeholder{
     color: #390466;
-    font: var(--font-weight-regular) 14pt inter;
+    font: var(--font-weight-regular) 12pt inter;
 }
 #contact_form label{
     color: #390466;
-    font: var(--font-weight-regular) 14pt inter;
+    font: var(--font-weight-regular) 12pt inter;
 }
 #contact_form input:focus::placeholder {
     color: transparent;
@@ -306,7 +278,7 @@ input:focus,textarea:focus{
     border-radius: 3px;
     background-color: #e1d9e8;
     word-wrap: break-word;
-    font: var(--font-weight-regular) 10pt inter;
+    font: var(--font-weight-regular) 8pt inter;
     padding: 2px;
     resize: none;
 }
@@ -315,8 +287,7 @@ input:focus,textarea:focus{
     width: 166.09px;
     height: 38.4px;
     border-radius: 3px;
-    font: var(--font-weight-bold) 16pt inter;
-    border: none;
+    font: var(--font-weight-bold) 14pt inter;
     background-color: #8842c4;
     color: #f7f2fb;
     cursor: pointer;
@@ -341,44 +312,104 @@ footer{
     margin: 35px 0 20px;
 }
 .copyrights>span{
-    font: var(--font-weight-regular) 14pt inter;
+    font: var(--font-weight-regular) 10pt inter;
     color: var(--white-color);
 }
 .developers_f{
-    font: var(--font-weight-regular) 14pt inter;
+    font: var(--font-weight-regular) 12pt inter;
     color: var(--white-color);
 }
 @media only screen and (max-width: 1110px) {
+    .welcome_sec{
+
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .welcome_sec p{
+        margin-bottom: 25px;
+        font: var(--font-weight-black) 20pt var(--inter-font-family);
+    }
+    #browse_issues_butt{
+        font: var(--font-weight-bold) 8pt var(--inter-font-family);
+        width: 100px;
+        height: 25px;
+    }
+    .intro_sec{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .intro_sec h3{
+        font: var(--font-weight-extrabold) 16pt var(--inter-font-family);
+        color: var(--first-color-plate);
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
+    .intro_sec {
+        font: var(--font-weight-regular) 10pt var(--inter-font-family);
+        color: var(--white-color);
+    }
+    .intro_sec h3{
+        margin-bottom: 10px;
+    }
+    #who_we_are{
+        margin-bottom: 20px;
+    }
+    .our_team h3{
+        font-size: 26pt;
+    }
     .hi-slide{
-        width: 500px;
-        height: 399px;
+        width: 366px;
+        height: 250px;
+        
     }
-    .hi-slide .hi-prev{
-        left: -30px;
+    .hi-slide > ul{
+        width: 366px;
+        height: 250px;
     }
-    .hi-slide .hi-next{
-        right: -30px;
+    #Contact_internal{
+        display: flex;
+        flex-direction: column;
     }
     #Contact_cont{
-        min-width: 500px;
-        /* display: none; */
+        min-width: 366px;
+        margin-top: 50px;
     }
     .send_box{
-        width: 200px;
-        height: fit-content;
-        padding: 25px;
+        height: 300px;
+    }
+    #contact_form textarea{
+        margin-top: 3px;
+        width: 100%;
+        height: 100px;
     }
     .Contact_pages p{
         font: var(--font-weight-extrabold) 24pt inter;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     
     }
+    .Contact_pages a:not(:last-child){
+        margin-bottom: 30px;
+    }
     #contact_form #contact_send{
-        margin-top: 5px;
         width: 100%;
-        height: 38.4px;
-        border-radius: 3px;
         font: var(--font-weight-bold) 12pt inter;
     }
+    #contact_form input{
+        margin-bottom: 20px;
+    }
+    .send_box{
+        margin-left:0;
+    }
+    
+    .copyrights>span{
+        font: var(--font-weight-regular) 8pt inter;
+    }
+    .copyrights>span img{
+        width: 220px;
+        height: 45px;
+    }
+    .developers_f{
+        font: var(--font-weight-regular) 10pt inter;
+    }
+    
   }
-  /* <how> */

@@ -24,8 +24,8 @@ if(query.matches){
                 { $zIndex: 11, width: 0, height: 150, top: 69, left: 400, $opacity: 0 },
                 { $zIndex: 12, width: 0, height: 170, top: 59, left: 400, $opacity: 0 },
                 { $zIndex: 13, width: 0, height: 252, top: 35, left: 400, $opacity: 0 },
-                { $zIndex: 14, width: 218, height: 349, top: 0, left: 0, $opacity: 1 },
-                { $zIndex: 13, width: 218, height: 349, top: 0, left: 248, $opacity: 1 },
+                { $zIndex: 14, width: 168, height: 250, top: 0, left: 0, $opacity: 1 },
+                { $zIndex: 13, width: 168, height: 250, top: 0, left: 198, $opacity: 1 },
                 { $zIndex: 12, width: 0, height: 170, top: 59, left: 400, $opacity: 0.0 },
                 { $zIndex: 11, width: 0, height: 150, top: 69, left: 400, $opacity: 0 },
                 { $zIndex: 10, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
@@ -56,11 +56,11 @@ if(query.matches){
                 clearInterval(timer);
                 timer = null;
             }).on('mouseout', function() {
-                autoPlay();
+                // autoPlay();
             });
     
             move();
-            autoPlay();
+            // autoPlay();
             function move() {
                 $lis.each(function(index, element) {
                     var state = states[index];
@@ -95,35 +95,35 @@ if(query.matches){
             };
             $.extend(true, setting, options);
             var states = [
-                { $zIndex: 0, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 1, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 2, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 3, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 4, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 5, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 6, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 7, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 8, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 9, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 10, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 11, width: 120, height: 150, top: 69, left: 700, $opacity: 0 },
-                { $zIndex: 12, width: 130, height: 170, top: 59, left: 700, $opacity: 0 },
-                { $zIndex: 13, width: 250, height: 352, top: 35, left: 0, $opacity: 0.8 },
-                { $zIndex: 14, width: 318, height: 449, top: 0, left: 295, $opacity: 1 },
-                { $zIndex: 13, width: 250, height: 352, top: 35, left: 658, $opacity: 0.8 },
-                { $zIndex: 12, width: 130, height: 170, top: 59, left: 700, $opacity: 0.0 },
-                { $zIndex: 11, width: 120, height: 150, top: 69, left: 700, $opacity: 0 },
-                { $zIndex: 10, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 9, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 8, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 7, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 6, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 5, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 4, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 3, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 2, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 1, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: 0, width: 0, height: 0, top: 79, left: 700, $opacity: 0 }
+                { $zIndex: 0, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 1, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 2, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 3, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 4, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 5, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 6, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 7, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 8, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 9, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 10, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 11, width: 120, height: 150, top: 69, left: 400, $opacity: 0 },
+                { $zIndex: 12, width: 130, height: 170, top: 59, left: 400, $opacity: 0 },
+                { $zIndex: 13, width: 200, height: 302, top: 50, left: 0, $opacity: 0.8 },
+                { $zIndex: 14, width: 268, height: 399, top: 0, left: 245, $opacity: 1 },
+                { $zIndex: 13, width: 200, height: 302, top: 50, left: 558, $opacity: 0.8 },
+                { $zIndex: 12, width: 130, height: 170, top: 59, left: 400, $opacity: 0.0 },
+                { $zIndex: 11, width: 120, height: 150, top: 69, left: 400, $opacity: 0 },
+                { $zIndex: 10, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 9, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 8, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 7, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 6, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 5, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 4, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 3, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 2, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 1, width: 0, height: 0, top: 79, left: 400, $opacity: 0 },
+                { $zIndex: 0, width: 0, height: 0, top: 79, left: 400, $opacity: 0 }
             ];
     
             var $lis = $ele.find('li');
@@ -141,7 +141,7 @@ if(query.matches){
                 clearInterval(timer);
                 timer = null;
             }).on('mouseleave', function() {
-                autoPlay();
+                // autoPlay();
             });
     
             move();
