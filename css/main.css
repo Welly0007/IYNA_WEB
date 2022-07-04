@@ -7,12 +7,12 @@
 }
 @font-face {
     font-family: organetto;
-    src: url(/Styles/Fonts/Organetto//Fontspring-DEMO-organetto-regular.otf);
+    src: url(/css/Fonts/Organetto//Fontspring-DEMO-organetto-regular.otf);
     font-weight: regular;
 }
 @font-face {
     font-family: organetto;
-    src: url(/Styles/Fonts/Organetto/Fontspring-DEMO-organetto-bold.otf);
+    src: url(/css/Fonts/Organetto/Fontspring-DEMO-organetto-bold.otf);
     font-weight: bold;
 }
 :root {
@@ -32,10 +32,10 @@
     --font-weight-extrabold:      800;
     --font-weight-black:          900;
   }
-  body{
-    background: url(../resources/upper_background.png) no-repeat, url(../resources/lower_background.png) repeat;
-    /* background-color: var(--second-color-plate); */
-    background-size: contain;
+  .homepage{
+    background: url(../resources/upper_background_LP.png) no-repeat, url(../resources/lower_background_LP.png) repeat;
+    background-color: var(--second-color-plate);
+    background-size: 100%;
   }
   #container{
     width: 100%;
@@ -47,12 +47,11 @@
     z-index: 999;
     position: fixed;
     width: 100%;
-    padding: 7px 0px 7px 0px;
+    padding: 7px 15% 7px 15%;
     height: 100px;
+    background-color: #020021;
   }
   #logo img{
-    width: 102px;
-    height: 95px;
     margin-left: -30px;
   }
   nav{
@@ -90,7 +89,7 @@ header a:hover::after{
 .welcome_sec p{
     margin-bottom: 35px;
     color: var(--white-color);
-    font: var(--font-weight-black) 42pt var(--inter-font-family);
+    font: var(--font-weight-extrabold) 42pt var(--inter-font-family);
 }
 .welcome_sec span{
     color: var(--first-color-plate);
@@ -197,8 +196,6 @@ transition: all 0.7s;
     overflow: hidden;
     position: absolute;
     z-index: 0;
-    left: 377px;
-    top:147px;
 }
 .hi-slide > ul > li > img{
     width: 100%;
@@ -327,7 +324,7 @@ footer{
     }
     .welcome_sec p{
         margin-bottom: 25px;
-        font: var(--font-weight-black) 20pt var(--inter-font-family);
+        font: var(--font-weight-extrabold) 20pt var(--inter-font-family);
     }
     #browse_issues_butt{
         font: var(--font-weight-bold) 8pt var(--inter-font-family);

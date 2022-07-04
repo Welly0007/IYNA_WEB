@@ -1,0 +1,74 @@
+.issuespage{
+    background: url(../resources/background_ISPAGE.png);
+    background-size: contain;
+  }
+.issues{
+    margin-top: 200px;
+    margin-bottom: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.issues p{
+    color: var(--white-color);
+    font: var(--font-weight-extrabold) 42pt var(--inter-font-family);
+}
+.issues span{
+    color: var(--first-color-plate);
+}
+.issues .hi-slide{
+    width: 578px;
+    height: 483px;
+    margin: 0;
+}
+.issues .hi-slide > ul{
+    list-style: none;
+    position: relative;
+    width: 578px;
+    height: 483px;
+    
+}
+.issues .hi-slide > ul> li{
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top:147px;
+    box-shadow: -50px 0px 300px #843fc441;
+}
+
+.season_1 p{
+    font: var(--font-weight-extrabold) 36pt inter;
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+.issues_season1>ul{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 270px;
+}
+
+@media only screen and (max-width: 1366px) {
+    .issues{
+
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+    .issues p{
+        margin-bottom: 25px;
+        font: var(--font-weight-extrabold) 36pt var(--inter-font-family);
+    }
+    .issues .hi-slide{
+        width: 405px;
+        height: 332px;
+    }
+    .issues .hi-slide > ul{
+        width: 405px;
+        height: 332px;
+    }
+    .issues_season1>ul>li>img{
+        width:250px;
+        height: 327px;
+    }
+}
