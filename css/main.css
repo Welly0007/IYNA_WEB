@@ -7,12 +7,12 @@
 }
 @font-face {
     font-family: organetto;
-    src: url(/css/Fonts/Organetto//Fontspring-DEMO-organetto-regular.otf);
+    src: url(../css/Fonts/Organetto//Fontspring-DEMO-organetto-regular.otf);
     font-weight: regular;
 }
 @font-face {
     font-family: organetto;
-    src: url(/css/Fonts/Organetto/Fontspring-DEMO-organetto-bold.otf);
+    src: url(../css/Fonts/organetto/Fontspring-DEMO-organetto-bold.otf);
     font-weight: bold;
 }
 :root {
