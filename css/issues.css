@@ -1,20 +1,13 @@
-.issuespage{
-    background: url(../resources/background_ISPAGE.png);
-    background-size: contain;
-  }
+
+.issues_head #nav_but a:nth-child(2):after{
+    width: 100%;
+}
 .issues{
     margin-top: 200px;
     margin-bottom: 270px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.issues p{
-    color: var(--white-color);
-    font: var(--font-weight-extrabold) 42pt var(--inter-font-family);
-}
-.issues span{
-    color: var(--first-color-plate);
 }
 .issues .hi-slide{
     width: 578px;
@@ -34,7 +27,8 @@
     z-index: 0;
     left: 377px;
     top:147px;
-    box-shadow: -50px 0px 300px #843fc441;
+    box-shadow: -50px 0px 150px #843fc441;
+    cursor: pointer;
 }
 
 .season_1 p{
@@ -47,17 +41,17 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 270px;
+    list-style: none;
+    flex-wrap: wrap;
 }
-
+.issues_season1>ul>li:not(:last-child){
+margin-bottom: 50px;
+}
 @media only screen and (max-width: 1366px) {
     .issues{
 
         margin-top: 150px;
         margin-bottom: 100px;
-    }
-    .issues p{
-        margin-bottom: 25px;
-        font: var(--font-weight-extrabold) 36pt var(--inter-font-family);
     }
     .issues .hi-slide{
         width: 405px;

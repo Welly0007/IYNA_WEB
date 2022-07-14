@@ -37,35 +37,46 @@
     background-color: var(--second-color-plate);
     background-size: 100%;
   }
-  #container{
-    width: 100%;
-    padding: 0 15%;
-    margin: 0 auto;
+  html::-webkit-scrollbar{
+    /* display: none; */
+  }
+.sub_pages{
+    background: url(../resources/background_ISPAGE.png);
+    background-size: cover;
+}
+#container{
+    padding: 100px 15% 0px;
+}
+section{
+    height: fit-content;
+    padding: 15% 0px;
+
 }
   header{
     top: 0;
     z-index: 999;
     position: fixed;
     width: 100%;
-    padding: 7px 15% 7px 15%;
-    height: 100px;
-    background-color: #020021;
-  }
-  #logo img{
-    margin-left: -30px;
-  }
-  nav{
+    padding: 0px 15% 0px 15%;
+    height: fit-content;
+    background-color: #02000d;
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
-  header a{
+  nav{
+    display: inline-flex;
+    align-items: center;
+  }
+  #nav_but a{
     position: relative;
     text-decoration: none;
     color: var(--white-color);
     margin-left: 35px;
-    font: var(--font-weight-regular) 12pt organetto;
+    font: var(--font-weight-regular) 10pt organetto;
+    cursor: pointer;
   }
-  header a:after{
+#nav_but a:after{
 content: "";
 position: absolute;
 background-color: var(--first-color-plate);
@@ -74,30 +85,46 @@ width: 0%;
 left: 0;
 bottom: -5px;
 }
-header a:hover::after{
+#nav_but a:hover::after{
     width: 100%;
     transition: 0.5s;
+}
+#publish_butt{
+    width: max-content;
+    padding: 3px;
+    height: max-content;
+    border-radius: 3px;
+    background-color:#8842c4;
+    color: var(--white-color);
+    font: var(--font-weight-regular) 10pt organetto;
+    cursor: pointer;
+}
+#publish_butt:hover{
+    box-shadow: 0 0 35px var(--first-color-plate);
+}
+.home_head #nav_but a:nth-child(1)::after{
+    width: 100%;
 }
 #nav_but{
     text-transform: uppercase;
 }
-.welcome_sec{
-
-    margin-top: 250px;
-    margin-bottom: 270px;
-}
-.welcome_sec p{
+#typedtext{
     margin-bottom: 35px;
     color: var(--white-color);
-    font: var(--font-weight-extrabold) 42pt var(--inter-font-family);
+    font: var(--font-weight-extrabold) 46pt var(--inter-font-family);
+    height: 222px;
+    overflow: hidden;
 }
-.welcome_sec span{
+
+
+#typedtext span>span{
     color: var(--first-color-plate);
 }
 #browse_issues_butt{
     font: var(--font-weight-bold) 14pt var(--inter-font-family);
-    width: 200px;
-    height: 50px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
     background-color: var(--first-color-plate);
     color: var(--white-color);
     border-radius: 3px;
@@ -119,7 +146,6 @@ header a:hover::after{
 }
  .intro_sec{
     width: 100%;
-    margin-bottom: 150px;
 }
 .intro_sec h3{
     font: var(--font-weight-extrabold) 26pt var(--inter-font-family);
@@ -155,10 +181,10 @@ animation: glow 1s ease-in-out infinite alternate;
 }
 @-webkit-keyframes glow {
     from {
-        text-shadow: 0 0 35px var(--first-color-plate);
+        text-shadow: 0 0 50px var(--first-color-plate);
     }
     to{
-        text-shadow: 0 0 20px var(--first-color-plate);
+        text-shadow: 0 0 35px var(--first-color-plate);
     }
 }
 .hi-slide{
@@ -166,6 +192,7 @@ animation: glow 1s ease-in-out infinite alternate;
     width: 758px;
     height: 399px;
     margin: 30px auto 0;
+
 }
 .hi-slide .hi-next,
 .hi-slide .hi-prev{
@@ -177,7 +204,7 @@ height: 70px;
 line-height: 80px;
 text-align: center;
 cursor: pointer;
-transition: all 0.7s;
+z-index: 20;
 }
 .hi-slide .hi-prev{
     left: -70px;
@@ -191,6 +218,8 @@ transition: all 0.7s;
     position: relative;
     width: 758px;
     height: 399px;
+    overflow: hidden;
+
 }
 .hi-slide > ul> li{
     overflow: hidden;
@@ -203,10 +232,11 @@ transition: all 0.7s;
 }
 #Contact_cont{
     width: min-content;
-    height: max-content;
     min-width: 758px;
+    height: max-content;
     background-color: #7d00e3;
-    margin: 150px auto 100px;
+    margin: 150px auto;
+    margin: 0 auto;
     border-radius: 9px;
     padding: 40px;
 }
@@ -237,7 +267,8 @@ transition: all 0.7s;
 }
 .send_box{
     width: fit-content;
-    height: 511px;
+    /* height: 511px; */
+    height: fit-content;
     border-radius: 9px;
     background-color: var(--white-color);
     display: flex;
@@ -288,6 +319,8 @@ input:focus,textarea:focus{
     background-color: #8842c4;
     color: #f7f2fb;
     cursor: pointer;
+    border: none;
+    margin-bottom: 0px;
 }
 #contact_form #contact_send:hover{
     box-shadow: 0 0 35px var(--first-color-plate);
@@ -296,10 +329,11 @@ input:focus,textarea:focus{
 footer{
     display: flex;
     width: 100%;
-    height: 178px;
+    height: 180px;
     background-color: #380265;
     justify-content: space-around;
-    bottom: 0px;
+    bottom: -1px;
+    margin-top: 15%;
 }
 .copyrights , .developers_f{
     display: flex;
@@ -317,33 +351,25 @@ footer{
     color: var(--white-color);
 }
 @media only screen and (max-width: 1110px) {
-    .welcome_sec{
-
-        margin-top: 100px;
-        margin-bottom: 100px;
+    #nav_but a{
+        font-size: 8pt;
     }
-    .welcome_sec p{
-        margin-bottom: 25px;
-        font: var(--font-weight-extrabold) 20pt var(--inter-font-family);
+    #publish_butt{
+        font: var(--font-weight-regular) 7pt organetto;
+    }
+    #typedtext{
+        font-size: 30pt;
+        height: 140px;
     }
     #browse_issues_butt{
-        font: var(--font-weight-bold) 8pt var(--inter-font-family);
-        width: 100px;
-        height: 25px;
-    }
-    .intro_sec{
-        width: 100%;
-        margin-bottom: 100px;
+        font-size: 8pt;
+        padding: 8px;
     }
     .intro_sec h3{
-        font: var(--font-weight-extrabold) 15pt var(--inter-font-family);
-        color: var(--first-color-plate);
-        text-transform: capitalize;
-        margin-bottom: 30px;
+        font: var(--font-weight-extrabold) 18pt var(--inter-font-family);
     }
     .intro_sec {
-        font: var(--font-weight-regular) 5pt var(--inter-font-family);
-        color: var(--white-color);
+        font: var(--font-weight-regular) 10pt var(--inter-font-family);
     }
     .intro_sec h3{
         margin-bottom: 10px;
@@ -357,22 +383,17 @@ footer{
     .hi-slide{
         width: 366px;
         height: 250px;
-        
     }
     .hi-slide > ul{
         width: 366px;
         height: 250px;
     }
+    #Contact_cont{
+        min-width: 450px;
+    }
     #Contact_internal{
         display: flex;
         flex-direction: column;
-    }
-    #Contact_cont{
-        min-width: 366px;
-        margin-top: 50px;
-    }
-    .send_box{
-        height: 300px;
     }
     #contact_form textarea{
         margin-top: 3px;
@@ -382,7 +403,6 @@ footer{
     .Contact_pages p{
         font: var(--font-weight-extrabold) 24pt inter;
         margin-bottom: 50px;
-    
     }
     .Contact_pages a:not(:last-child){
         margin-bottom: 30px;
@@ -408,5 +428,120 @@ footer{
     .developers_f{
         font: var(--font-weight-regular) 10pt inter;
     }
-    
-  }
+}
+@media only screen and (max-width: 650px) {
+    /* #nav_but a{
+        font-size: 1pt;
+    }
+    #publish_butt{
+        font: var(--font-weight-regular) 7pt organetto;
+    } */
+    header{
+        display: none;
+    }
+    #container{
+        padding: 40px 15% 0px;
+    }
+    #typedtext{
+        font-size: 18pt;
+        height: 86px;
+        margin-bottom: 15px;
+    }
+    #browse_issues_butt{
+        font-size: 8pt;
+    }
+    .intro_sec h3{
+        font: var(--font-weight-extrabold) 14pt var(--inter-font-family);
+    }
+    .intro_sec {
+        font: var(--font-weight-regular) 8pt var(--inter-font-family);
+    }
+    .intro_sec h3{
+        margin-bottom: 6px;
+    }
+    #who_we_are{
+        margin-bottom: 16px;
+    }
+    .our_team h3{
+        font-size: 22pt;
+    }
+    .hi-slide{
+        width: 168px;
+        height: 250px;
+    }
+    .hi-slide > ul{
+        width: 168px;
+        height: 250px;
+    }
+    #Contact_cont{
+        min-width: 250px;
+        margin-top: 50px;
+        padding: 20px;
+    }
+    .Contact_pages p{
+        font: var(--font-weight-extrabold) 14pt inter;
+        color:var(--white-color);
+        text-transform: capitalize;
+        margin-bottom: 40px;
+    }
+    .Contact_pages{
+        display: flex;
+        flex-direction: column;
+    }
+    .Contact_pages a{
+        font-size: 8pt;
+        margin-bottom: 20px;
+    }
+    .Contact_pages img{
+        margin-right: 4%;
+        width: 35px;
+        height: 35px;
+    }
+    .send_box{
+        padding: 20px;
+    }
+    #contact_form input{
+        border-bottom: 2px solid #390365;
+        margin-bottom: 15px;
+    }
+    #contact_form input::placeholder{
+        font-size: 8pt;
+    }
+    #contact_form label{
+        font-size: 8pt;
+    }
+    #contact_form textarea{
+        height: 150px;
+        font-size: 8pt;
+    }
+    #contact_form #contact_send{
+    font-size: 10pt;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .developers_f{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .copyrights{
+        text-align: center;
+    }
+    .copyrights img{
+        margin-left: -25px;
+    }
+    .copyrights>span:first-child,.developers_f>span:first-child{
+        margin: 0px 0 0px;
+    }
+    .copyrights>span{
+        font: var(--font-weight-regular) 9pt inter;
+        color: var(--white-color);
+    }
+    .developers_f{
+        font: var(--font-weight-regular) 8pt inter;
+        color: var(--white-color);
+    }
+}

@@ -4,8 +4,8 @@ if(query.matches){
         var slide = function(ele,options) {
             var $ele = $(ele);
             var setting = {
-                speed: 1500,
-                interval: 1500,
+                speed: 800,
+                interval: 3000,
                 
             };
             $.extend(true, setting, options);
@@ -17,13 +17,23 @@ if(query.matches){
     
             var $lis = $ele.find('li');
             var timer = null;
-            $ele.on('mouseenter', function() {
+    
+            // 事件
+            $ele.find('.hi-next').on('click', function() {
+                next();
+            });
+            $ele.find('.hi-prev').on('click', function() {
+                states.push(states.shift());
+                move();
+            });
+            $ele.on('mouseover', function() {
                 clearInterval(timer);
                 timer = null;
-            }).on('mouseleave', function() {
+            }).on('mouseout', function() {
                 autoPlay();
             });
     
+            move();
             autoPlay();
             function move() {
                 $lis.each(function(index, element) {
@@ -53,8 +63,8 @@ if(query.matches){
         var slide = function(ele,options) {
             var $ele = $(ele);
             var setting = {
-                speed: 1500,
-                interval: 1500,
+                speed: 800,
+                interval: 3000,
                 
             };
             $.extend(true, setting, options);
@@ -66,6 +76,15 @@ if(query.matches){
     
             var $lis = $ele.find('li');
             var timer = null;
+    
+            // 事件
+            $ele.find('.hi-next').on('click', function() {
+                next();
+            });
+            $ele.find('.hi-prev').on('click', function() {
+                states.push(states.shift());
+                move();
+            });
             $ele.on('mouseenter', function() {
                 clearInterval(timer);
                 timer = null;
@@ -73,6 +92,7 @@ if(query.matches){
                 autoPlay();
             });
     
+            move();
             autoPlay();
             function move() {
                 $lis.each(function(index, element) {
@@ -98,3 +118,5 @@ if(query.matches){
     })(jQuery);
     
 }
+
+

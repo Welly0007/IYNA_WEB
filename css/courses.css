@@ -1,0 +1,40 @@
+.courses_page{
+        background: url(../resources/background_CoursesPage.png) no-repeat, url(../resources/lower_background_LP.png) repeat;
+        background-color: var(--second-color-plate);
+        background-size: 100%;
+
+}
+.courses_head #nav_but a:nth-child(3):after{
+    width: 100%;
+}
+.courses_sec1{
+    height: 75vh;
+    margin-top: 30%;
+}
+.courses>ul{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 270px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.courses>ul>li:not(:last-child){
+    margin-bottom: 50px;
+    /* margin-right: 50px; */
+    
+}
+.courses>ul>li>img{
+    box-shadow: 0px 0px 200px #843fc479;
+    border-radius: 7px;
+}
+.courses>ul>li>img{
+    width:250px;
+    height: 327px;
+}
+
+@media only screen and (max-width: 1366px) {
+    .courses_sec1 p{
+        font: var(--font-weight-extrabold) 22pt var(--inter-font-family);
+    }
+
+}
