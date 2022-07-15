@@ -50,9 +50,8 @@
 section{
     height: fit-content;
     padding: 15% 0px;
-
 }
-  header{
+header{
     top: 0;
     z-index: 999;
     position: fixed;
@@ -68,7 +67,7 @@ section{
     display: inline-flex;
     align-items: center;
   }
-  #nav_but a{
+  .nav_but a{
     position: relative;
     text-decoration: none;
     color: var(--white-color);
@@ -76,7 +75,10 @@ section{
     font: var(--font-weight-regular) 10pt organetto;
     cursor: pointer;
   }
-#nav_but a:after{
+  .nav_but a:last-child{
+    display: none;
+  }
+.nav_but a:after{
 content: "";
 position: absolute;
 background-color: var(--first-color-plate);
@@ -85,7 +87,7 @@ width: 0%;
 left: 0;
 bottom: -5px;
 }
-#nav_but a:hover::after{
+.nav_but a:hover::after{
     width: 100%;
     transition: 0.5s;
 }
@@ -102,11 +104,20 @@ bottom: -5px;
 #publish_butt:hover{
     box-shadow: 0 0 35px var(--first-color-plate);
 }
-.home_head #nav_but a:nth-child(1)::after{
+.home_head .nav_but a:nth-child(1)::after{
     width: 100%;
 }
-#nav_but{
+.nav_but{
     text-transform: uppercase;
+}
+.nav_mob{
+    color: var(--white-color);
+    font-size: 30px;
+    float: right;
+    display: none;
+}
+#check{
+    display: none;
 }
 #typedtext{
     margin-bottom: 35px;
@@ -351,7 +362,7 @@ footer{
     color: var(--white-color);
 }
 @media only screen and (max-width: 1110px) {
-    #nav_but a{
+    .nav_but a{
         font-size: 8pt;
     }
     #publish_butt{
@@ -430,17 +441,57 @@ footer{
     }
 }
 @media only screen and (max-width: 650px) {
-    /* #nav_but a{
-        font-size: 1pt;
+    .nav_mob{
+        position: absolute;
+        right: 15%;
+        display: block;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    #check:checked ~ .nav_but{
+        right: 0;
+      }
+      #check:checked ~ .nav_mob{
+        color: #7d00e3;
+
+      }
+      #check:checked ~ .nav_but a{
+        display: block;
+
+      }
+      nav{
+        display: inline-flex;
+        align-items: center;justify-content:space-between;
+      }
+      .nav_but{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #02000d;
+        top:65px;
+        right: -100%;
+        text-align: center;
+        transition: all 1s;
+    }
+    .nav_but a{
+        display: none;
+        font-size:12pt ;
+        margin: 0;
+        padding: 15px 0px;
+        transition: all 0.8s;
+    }
+    .nav_but a:hover{
+        background-color: #380265;
+        text-shadow: 0 0 35px var(--white-color);
+    }
+    .nav_but a:after{
+    height: 0px;
     }
     #publish_butt{
-        font: var(--font-weight-regular) 7pt organetto;
-    } */
-    header{
         display: none;
     }
     #container{
-        padding: 40px 15% 0px;
+        padding: 70px 15% 0px;
     }
     #typedtext{
         font-size: 18pt;
@@ -537,11 +588,11 @@ footer{
         margin: 0px 0 0px;
     }
     .copyrights>span{
-        font: var(--font-weight-regular) 9pt inter;
+        font: var(--font-weight-regular) 8pt inter;
         color: var(--white-color);
     }
     .developers_f{
-        font: var(--font-weight-regular) 8pt inter;
+        font: var(--font-weight-regular) 7pt inter;
         color: var(--white-color);
     }
 }

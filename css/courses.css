@@ -4,7 +4,7 @@
         background-size: 100%;
 
 }
-.courses_head #nav_but a:nth-child(3):after{
+.courses_head .nav_but a:nth-child(3):after{
     width: 100%;
 }
 .courses_sec1{
