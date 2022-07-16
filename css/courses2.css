@@ -167,8 +167,8 @@
 
     }
     .big_video video{
-        width: 300px;
-        height: 168px;
+        width: 250px;
+        height: 140px;
         
     }
     .vid_info{
@@ -178,15 +178,15 @@
     }
     .big_video h2{
         font-size: 12pt;
-        width: 300px;
+        width: 250px;
     }
     .big_video p{
         font-size: 8pt;
-        width: 300px;
+        width: 250px;
     }
     .big_video .video_time {
         font-size: 8pt;
-        width: 300px;
+        width: 250px;
         padding-right:10px;
     }
     .next{
