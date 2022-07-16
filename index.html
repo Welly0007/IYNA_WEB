@@ -175,13 +175,18 @@
                     <a href="instagram.com/iyna.october?"><img src="resources/logos/Layer_3.png" alt="">instagram.com/iyna.october?</a>
                     </div>
                     <div class="send_box">
-                        <form id="contact_form">
-                            <input type="text" name="" id="Contact_name" placeholder="Your Name">
-                            <input type="email" name="" id="Contact_mail" placeholder="Mail">
+                        <!-- <form id="contact_form" method="post" action="form.php">
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                            <input type="email" name="mail" id="mail" placeholder="Mail" required>
                             <label for="message">Message</label>
-                            <textarea name="" id="message"></textarea>
-                            <input type="submit" name="" id="contact_send" value="Send">
-                        </form>
+                            <textarea name="message" id="message" required ></textarea>
+                            <input type="submit" name="submit" id="contact_send" value="Send">
+                        </form> -->
+                        <form action="https://formsubmit.co/mifo0072004@gmail.com" method="POST">
+                            <input type="text" name="name" required>
+                            <input type="email" name="email" required>
+                            <button type="submit">Send</button>
+                       </form>
                     </div>
                 </div>
             </div>
@@ -209,6 +214,21 @@
 <script src="js/script_LP.js"></script>
 <script>
     $('.slide').hiSlide();
+</script>
+<!-- <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    function sendEmail(){ Email.send({
+    Host : "smtp.elasticemail.com",
+    SecureToken :"578fd87e-a77d-4264-bac9-6217d8eae0cb",
+    To : 'mifo0072004@gmail.com',
+    From : document.getElementById('mail').value,
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+}; -->
 </script>
 </body>
 </html>
