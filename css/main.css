@@ -37,9 +37,9 @@
     background-color: var(--second-color-plate);
     background-size: 100%;
   }
-  html::-webkit-scrollbar{
-    /* display: none; */
-  }
+  /* html::-webkit-scrollbar{
+    display: block;
+  } */
 .sub_pages{
     background: url(../resources/background_ISPAGE.png);
     background-size: cover;
@@ -501,9 +501,9 @@ footer{
         padding: 70px 15% 0px;
     }
     #typedtext{
-        font-size: 18pt;
-        height: 86px;
-        margin-bottom: 15px;
+        font-size: 16pt;
+        height: 80px;
+        margin: 0px auto 15px;
     }
     #browse_issues_butt{
         font-size: 8pt;

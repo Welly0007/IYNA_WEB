@@ -7,34 +7,27 @@
 .courses_head .nav_but a:nth-child(3):after{
     width: 100%;
 }
-.courses_sec1{
-    height: 75vh;
-    margin-top: 30%;
-}
 .courses>ul{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 270px;
     flex-wrap: wrap;
     list-style: none;
 }
-.courses>ul>li:not(:last-child){
-    margin-bottom: 50px;
-    /* margin-right: 50px; */
-    
+.courses>ul>li{
+    padding:0 20px 30px;
 }
-.courses>ul>li>img{
+.courses>ul>li>a>img{
     box-shadow: 0px 0px 200px #843fc479;
     border-radius: 7px;
 }
-.courses>ul>li>img{
+.courses>ul>li>a>img{
     width:250px;
     height: 327px;
 }
 
-@media only screen and (max-width: 1366px) {
-    .courses_sec1 p{
-        font: var(--font-weight-extrabold) 22pt var(--inter-font-family);
+@media only screen and (max-width: 1110px) {
+    .courses>ul>li>a>img{
+        width: 150px;
+        height: 196px;
     }
-
 }

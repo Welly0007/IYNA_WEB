@@ -2,8 +2,6 @@
     display: none;
 }
 .publish_sec1{
-    height: 70vh;
-    margin-top: 300px;
     display: flex;
     justify-content: space-between;
 }
@@ -14,8 +12,7 @@
 }
 
 .publish_sec2{
-    width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 .publish_sec2 h3{
     font: var(--font-weight-extrabold) 26pt var(--inter-font-family);
@@ -29,11 +26,10 @@
 }
 #publish_guidlines{
     margin-top: 45px;
-
 }
 #publish_guidlines>p>a{
-    text-decoration: underline;
-    color: var(--first-color-plate);
+    text-decoration: none;
+    color: #923ce7;
 }
 #publish_criteria ol{
     counter-reset: item; 
@@ -53,7 +49,6 @@
     background-color: #6600cc;
     border-radius:9px;
     padding: 40px;
-    margin-bottom: 250px;
 }
 #publish_box>h3{
     font: var(--font-weight-extrabold) 36pt inter;
@@ -105,4 +100,55 @@
 #publish_form #publish_submit:hover,#publish_form label:hover{
     box-shadow: 0 0 35px var(--first-color-plate);
     transition: 0.3s;
+}
+@media only screen and (max-width: 1110px) {
+    .publish_sec1>img{
+        margin-top: -45px;
+        width: 213px;
+        height: 230px;
+    }
+    .publish_sec2 h3{
+        font-size: 14pt;
+        margin-bottom: 10px;
+    }
+    #publish_guidlines{
+        margin-top: 30px;
+    }
+    .publish_sec2 {
+        font: var(--font-weight-regular) 8pt var(--inter-font-family);
+        color: var(--white-color);
+    }
+}
+@media only screen and (max-width: 650px) {
+    .publish_sec1{
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+    }
+    .publish_sec1>img{
+        margin: 0 auto;
+        width: 150px;
+        height: 162px;
+    }
+    #publish_box>h3{
+        font-size: 18pt;
+    }
+    #publish_form input{
+        font-size: 10pt;
+    }
+    #publish_form input::placeholder{
+        font-size: 10pt;
+    }
+    .publish_commands{
+        flex-direction: column;
+    }
+    #publish_form label{
+        margin-right: 0px;
+    }
+    #publish_form #publish_submit, #publish_form label{
+        width: 100px;
+        height: 30px;
+        font-size: 10pt;
+        margin: 0 auto 15px;
+    }
 }

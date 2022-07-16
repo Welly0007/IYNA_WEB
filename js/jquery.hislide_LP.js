@@ -26,7 +26,7 @@ if(queryTwo.matches){
                 { $zIndex: 13, width: 0, height: 170, top: 59, left: 400, $opacity: 0 },
                 { $zIndex: 14, width: 0, height: 0, top: 125, left: -200, $opacity: 1 },
                 { $zIndex: 15, width: 168, height: 250, top: 0, left: 0, $opacity: 1 },
-                { $zIndex: 14, width: 0, height: 0, top: 125, left: 200, $opacity: 1 },
+                { $zIndex: 14, width: 0, height: 0, top: 125, left: 368, $opacity: 1 },
                 { $zIndex: 13, width: 0, height: 250, top: 0, left: 400, $opacity: 0.0 },
                 { $zIndex: 12, width: 0, height: 150, top: 69, left: 400, $opacity: 0 },
                 { $zIndex: 11, width: 0, height: 0, top: 79, left: 500, $opacity: 0 },
