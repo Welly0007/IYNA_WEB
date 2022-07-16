@@ -32,7 +32,7 @@
 .big_video p{
     font: var(--font-weight-regular) 10pt inter;
     color: var(--white-color);
-    width: 650px;
+    width: 550px;
 }
 .next_up{
     overflow-y: scroll;
@@ -115,13 +115,14 @@
     }
     .next_up{
         height: fit-content;
-
+        overflow-y: hidden;
         display: flex;
         flex-direction: row;
         width: min-content;
     }
+    
     .next{
-        width:90%;
+        width:550px;
         overflow: hidden;
         overflow-y: hidden;
         overflow-x: scroll;
