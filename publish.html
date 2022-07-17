@@ -68,13 +68,13 @@
             </h3>
             <form id="publish_form" method="post" action="https://formsubmit.co/0fe0655f788a1ac1962f636f19b88583" enctype="multipart/form-data">
                 <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_subject" value="Contact us submision">
+                <input type="hidden" name="_subject" value="Publish form submision">
                 <input type="hidden" name="_autoresponse" value="Recived succesfully">
-                <input type="text" name="Name" id="publish_name" placeholder="Full Name">
-                <input type="email" name="Email" id="publish_email" placeholder="E-mail">
-                <input type="text" name="Nationality" id="publish_nation" placeholder="Nationality">
-                <input type="text" name="Article_Name" id="publish_article" placeholder="Article Name">
-                <input type="file" name="attachment" id="publish_upload">
+                <input type="text" name="Name" id="publish_name" placeholder="Full Name" required>
+                <input type="email" name="email" id="publish_email" placeholder="E-mail" required>
+                <input type="text" name="Nationality" id="publish_nation" placeholder="Nationality" required>
+                <input type="text" name="Article_Name" id="publish_article" placeholder="Article Name" required>
+                <input type="file" name="attachment" id="publish_upload" required>
             <div class="publish_commands">
                 <label for="publish_upload">Upload File</label>
                 <input type="submit" name="" id="publish_submit" value="Submit">
