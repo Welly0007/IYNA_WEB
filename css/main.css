@@ -68,13 +68,6 @@ input:-webkit-autofill{
     background:url(../resources/lower_background_LP.png) fixed;
     background-color: var(--second-color-plate);
     background-size: cover;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-  }
-  .sec{
-    scroll-snap-align: start;
-    height: fit-content;
   }
   /* html::-webkit-scrollbar{
     display: block;
@@ -90,13 +83,13 @@ input:-webkit-autofill{
 }
 section{
     /* height: fit-content; */
-    padding: 15% 0;
+    /* padding: 15% 0; */
     /* margin-bottom: 600px; */
 }
 #container, .welcome_sec{
     position: sticky;
     top: 0;    
-    background-color: beige;
+    background-color: #380265;
     
 }
 header{
