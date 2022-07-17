@@ -1,7 +1,8 @@
 .courses2_sec1{
     display: flex;
     justify-content: space-between;
-    /* height: 100vh; */
+    padding: 20% 0;
+    align-items: center;
 }
 .big_video video{
     width: 550px;

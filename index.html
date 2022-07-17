@@ -33,12 +33,19 @@
         <a href="publish.html"><button id="publish_butt">Puplish with us</button></a>
         
     </header>
-    <div id="container">
-
+ <div class="sec">
     <section class="welcome_sec">
+        <div class="banner_content">
+        <video autoplay loop muted plays-inline class="back_vid">
+            <source src="/resources/back.mp4" type="video/mp4">
+        </video>
         <div id="typedtext"></div>
             <a href="issues.html"><button id="browse_issues_butt">Browse Issues</button></a>
+        </div>
     </section>
+</div>
+<div class="sec">
+    <div id="container">
     <section class="intro_sec">
         <div id="who_we_are">
         <h3>
@@ -62,6 +69,7 @@
             </div>
 
     </section>
+
     <section class="our_team">
         <h3>
             Our team
@@ -175,19 +183,23 @@
                     <a href="instagram.com/iyna.october?"><img src="resources/logos/Layer_3.png" alt="">instagram.com/iyna.october?</a>
                     </div>
                     <div class="send_box">
-                        <form id="contact_form" method="post" action="https://formsubmit.co/mifo0072004@gmail.com">
-                            <input type="text" name="name" id="name" placeholder="Your Name" required>
-                            <input type="email" name="mail" id="mail" placeholder="Mail" required>
+                        <form id="contact_form" method="post" action="https://formsubmit.co/0fe0655f788a1ac1962f636f19b88583">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_subject" value="Contact us submision">
+                            <input type="hidden" name="_autoresponse" value="Recived succesfully">
+                            <input type="text" name="User_Name" id="name" placeholder="Your Name" required>
+                            <input type="email" name="email" id="mail" placeholder="Mail" required>
                             <label for="message">Message</label>
-                            <textarea name="message" id="message" required ></textarea>
-                            <input type="submit" name="submit" id="contact_send" value="Send">
+                            <textarea name="Message" id="message" required ></textarea>
+                            <input type="submit" id="contact_send" value="Send">
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-
     </div>
+</div>
+<div class="sec">
     <footer>
         <div class="copyrights">
             <span><img src="resources/logos/logo_F.png" alt=""></span>
@@ -198,18 +210,19 @@
                 UI/UX designer:<br>Mohamed Saif El-Deen
             </Span>
             <span>
-                Website Developers/Managers:<br>
-                Mohamed Walid - Michael Mounay
+                Website Developer/Manager:<br>
+                Mohamed Walid
             </span>
         </div>
     </footer>
-
+</div>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="js/jquery.hislide_LP.js" ></script>
 <script src="js/script_LP.js"></script>
 <script>
     $('.slide').hiSlide();
 </script>
+<script src="/js/script.js">
 </script>
 </body>
 </html>

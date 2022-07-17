@@ -4,13 +4,17 @@
 .publish_sec1{
     display: flex;
     justify-content: space-between;
+    padding: 20% 0;
+    align-items: center;
 }
 .publish_sec1>img{
     margin-top: -90px;
     width: 413px;
     height: 445px;
 }
-
+#container{
+    padding: 15%;
+}
 .publish_sec2{
     margin-bottom: 100px;
 }
@@ -66,10 +70,12 @@
     margin-bottom: 35px;
     background: transparent;
     font: var(--font-weight-regular) 12pt inter;
+    
 }
 #publish_form input::placeholder{
     color: #d0d0d0;
     font: var(--font-weight-regular) 14pt inter;
+    background: transparent;
 }
 #publish_form input:focus::placeholder {
     color: transparent;

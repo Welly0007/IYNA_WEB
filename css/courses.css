@@ -7,6 +7,11 @@
 .courses_head .nav_but a:nth-child(3):after{
     width: 100%;
 }
+.courses_sec1{
+    display: flex;
+    padding: 20% 0;
+    align-items: center;
+}
 .courses>ul{
     display: flex;
     justify-content: space-around;
