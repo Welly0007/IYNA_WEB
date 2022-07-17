@@ -73,17 +73,17 @@ input:-webkit-autofill{
     display: block;
   } */
 .sub_pages{
-    background: url(/resources/background_ISPAGE.png);
+    background: url(../resources/background_ISPAGE.png);
     background-size: cover;
 }
 #container{
     padding: 0px 15% 500px;
-    background: url(/resources/lower_background_LP.png) fixed;
+    background: url(../resources/lower_background_LP.png) fixed;
     /* display: none; */
 }
 section{
     /* height: fit-content; */
-    /* padding: 15% 0; */
+    padding: 15% 0;
     /* margin-bottom: 600px; */
 }
 #container, .welcome_sec{
