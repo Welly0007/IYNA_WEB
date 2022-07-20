@@ -36,6 +36,6 @@
           setTimeout("typewriter()", iSpeed);
          }
         }
-        
-        
-        typewriter();
+        window.addEventListener("load", function(){
+            typewriter();
+        });    

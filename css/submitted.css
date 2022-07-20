@@ -1,0 +1,38 @@
+.submitted{
+    background: url(/resources/lower_background_LP.png);
+}
+#container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.submitted_sec{
+display: flex;
+flex-direction: column;
+font: 400 36pt inter;
+color: white;
+}
+#submit_span{
+    color: var(--first-color-plate);
+}
+#return_butt{
+    width: max-content;
+    padding: 3px;
+    height: max-content;
+    border-radius: 3px;
+    background-color:#8842c4;
+    color: var(--white-color);
+    font: var(--font-weight-regular) 10pt organetto;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 100px;
+    /* font-size: 14pt; */
+}
+@media only screen and (max-width: 650px) {
+    .submitted_sec{
+        font-size: 20pt;
+        }
+    #return_butt{
+        margin-top: 50px;
+    }
+}

@@ -38,4 +38,6 @@
         }
         
         
-        typewriter();
+        window.addEventListener("load", function(){
+            typewriter();
+        });    

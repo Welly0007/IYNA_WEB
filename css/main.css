@@ -343,6 +343,7 @@ z-index: 20;
 }
 #contact_form input{
     color:black;
+    font: var(--font-weight-regular) 12pt inter;
     border-bottom: 2.68px solid #390365;
     width: 100%;
     border-radius: 1.34px;
@@ -624,6 +625,7 @@ footer{
     #contact_form input{
         border-bottom: 2px solid #390365;
         margin-bottom: 15px;
+        font-size: 8pt;
     }
     #contact_form input::placeholder{
         font-size: 8pt;
