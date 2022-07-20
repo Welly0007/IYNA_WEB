@@ -54,6 +54,9 @@
     border-radius:9px;
     padding: 40px;
 }
+input:-webkit-autofill{
+    -webkit-text-fill-color: white;
+}
 #publish_box>h3{
     font: var(--font-weight-extrabold) 36pt inter;
     color: var(--white-color);

@@ -6,7 +6,7 @@
         ""
         );
         // Array.style.color = "#ff0000";
-        var iSpeed = 250; // time delay of print out
+        var iSpeed = 150; // time delay of print out
         var iIndex = 0; // start printing array at this posision
         var iArrLength = aText[0].length; // the length of the text array
         var iScrollAt = 20; // start scrolling up at this many lines
@@ -25,11 +25,11 @@
          }
          destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
          if ( iTextPos++ == iArrLength ) {
-          iTextPos = -1;
+          iTextPos = 0;
           iIndex++;
           if ( iIndex != aText.length ) {
            iArrLength = aText[iIndex].length;
-           setTimeout("typewriter()",0);
+           setTimeout("typewriter()",200);
           }
          } else {
           setTimeout("typewriter()", iSpeed);

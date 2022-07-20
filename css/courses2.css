@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     padding: 20% 0;
-    align-items: center;
 }
+
 .big_video video{
     width: 550px;
     height: 308px;

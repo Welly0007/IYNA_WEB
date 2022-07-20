@@ -5,7 +5,7 @@ if(queryTwo.matches){
         var slide = function(ele,options) {
             var $ele = $(ele);
             var setting = {
-                speed: 800,
+                speed: 500,
                 interval: 2000,
                 
             };
@@ -92,7 +92,7 @@ if(queryTwo.matches){
             var slide = function(ele,options) {
                 var $ele = $(ele);
                 var setting = {
-                    speed: 800,
+                    speed: 500,
                     interval: 2000,
                     
                 };
@@ -178,7 +178,7 @@ if(queryTwo.matches){
             var slide = function(ele,options) {
                 var $ele = $(ele);
                 var setting = {
-                    speed: 800,
+                    speed: 500,
                     interval: 2000,
                     
                 };
@@ -198,7 +198,7 @@ if(queryTwo.matches){
                     { $zIndex: 12, width: 0, height: 150, top: 69, left: 400, $opacity: 0 },
                     { $zIndex: 13, width: 0, height: 0, top: 198, left: -200, $opacity: 0.8 },
                     { $zIndex: 14, width: 200, height: 302, top: 50, left: 0, $opacity: 0.8 },
-                    { $zIndex: 15, width: 268, height: 399, top: 0, left: 245, $opacity: 1 },
+                    { $zIndex: 15, width: 281, height: 399, top: 0, left: 245, $opacity: 1 },
                     { $zIndex: 14, width: 200, height: 302, top: 50, left: 558, $opacity: 0.8 },
                     { $zIndex: 13, width: 0, height: 0, top: 198, left: 800, $opacity: 0.8 },
                     { $zIndex: 12, width: 0, height: 150, top: 69, left: 400, $opacity: 0 },

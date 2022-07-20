@@ -1,8 +1,11 @@
+
 .courses_page{
-        background: url(../resources/background_CoursesPage.png) no-repeat, url(../resources/lower_background_LP.png) repeat;
         background-color: var(--second-color-plate);
         background-size: 100%;
-
+}
+.courses_page #container{
+    background: url(../resources/background_CoursesPage.png) repeat;
+    background-size: cover;
 }
 .courses_head .nav_but a:nth-child(3):after{
     width: 100%;

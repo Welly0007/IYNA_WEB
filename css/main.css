@@ -39,9 +39,6 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active{
     transition: background-color 50000000000000s ease-in-out 0s;
 }
-input:-webkit-autofill{
-    -webkit-text-fill-color: white;
-}
 /* defaults END */
 .back_vid{
     position: absolute;
@@ -58,39 +55,31 @@ input:-webkit-autofill{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    z-index: -1;
+    z-index: 0;
     display: flex;
-    align-items: center;
     justify-content: flex-start;
-    padding: 0 15%;
+    padding: 0 5%;
 }
   .homepage{
-    background:url(../resources/lower_background_LP.png) fixed;
     background-color: var(--second-color-plate);
-    background-size: cover;
   }
-  /* html::-webkit-scrollbar{
-    display: block;
-  } */
-.sub_pages{
-    background: url(../resources/background_ISPAGE.png);
+.homepage #container , .sub_pages{
+    background: url(../resources/lower_background_LP.png) repeat;
     background-size: cover;
+    background-position: fixed;
+}
+.banner_content{
+margin-top: 15%;
 }
 #container{
     padding: 0px 15% 500px;
-    background: url(../resources/lower_background_LP.png) repeat;
-    /* display: none; */
 }
 section{
-    /* height: fit-content; */
     padding: 15% 0;
-    /* margin-bottom: 600px; */
 }
-#container, .welcome_sec{
+.homepage #container , .welcome_sec{
     position: sticky;
     top: 0;    
-    background-color: #380265;
-    
 }
 header{
     top: 0;
