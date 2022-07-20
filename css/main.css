@@ -103,7 +103,18 @@ header{
     align-items: center;
     transition: ease-in-out .6s;
   }
-  
+      #logo a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--white-color);
+        gap: 10px;
+        font: var(--font-weight-bold) 14pt organetto;
+        text-shadow: 0 0 8px #7d00e3;
+    }
+    #logo span{
+        display: none;
+    }
   nav{
     display: inline-flex;
     align-items: center;
@@ -407,6 +418,7 @@ footer{
     color: var(--white-color);
 }
 @media only screen and (max-width: 1110px) {
+
     .nav_but a{
         font-size: 8pt;
     }
@@ -492,6 +504,9 @@ footer{
     header{
         padding: 0px 5% 0px 5%;
     }
+    #logo span{
+        display: block;
+    }
     .nav_mob{
         position: absolute;
         right: 5%;
@@ -499,17 +514,7 @@ footer{
         cursor: pointer;
         transition: ease-in-out 0.5s;
     }
-    #logo a{
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: var(--white-color);
-        gap: 10px;
-        font: var(--font-weight-bold) 14pt organetto;
-        text-shadow: 0 0 8px #7d00e3;
 
-
-    }
     #logo img{
         width: 44px;
         height: 40px;
