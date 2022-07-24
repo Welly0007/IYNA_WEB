@@ -49,7 +49,7 @@ html:focus { outline: none}
     height: 100vh;
     z-index: 1000;
     background: #000 url(../resources/loader.gif) no-repeat center center;
-    background-size: 20%;
+    background-size: 15%;
     position: fixed;
     transition: 1s;
 }
