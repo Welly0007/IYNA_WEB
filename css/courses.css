@@ -4,7 +4,7 @@
         background-size: 100%;
 }
 .courses_page #container{
-    background: url(../resources/background_CoursesPage.png) repeat  center top;
+    background: url(../resources/background_CoursesPage.png) no-repeat top center, url(../resources/lower_background_LP.png) repeat;
     background-size: contain;
 }
 .courses_head .nav_but a:nth-child(3):after{
@@ -26,8 +26,12 @@
     padding:0 20px 30px;
 }
 .courses>ul>li>a>img{
-    box-shadow: 0px 0px 200px #843fc479;
     border-radius: 7px;
+    transition: ease-in-out .5s;
+}
+.courses>ul>li>a>img:hover{
+    box-shadow: 0px 0px 200px #843fc479;
+
 }
 .courses>ul>li>a>img{
     width:250px;

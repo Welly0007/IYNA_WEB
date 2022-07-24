@@ -1,6 +1,6 @@
 /* defaults START */
 *{
-    scroll-behavior:auto;
+    scroll-behavior:smooth;
     margin: 0;
     padding: 0;
     border: none;
@@ -79,7 +79,7 @@ html:focus { outline: none}
 .homepage #container , .sub_pages{
     background: url(../resources/lower_background_LP.png) repeat;
     background-size: cover;
-    background-position: fixed;
+    background-attachment: fixed;
 }
 .banner_content{
 margin-top: 20%;
@@ -181,7 +181,7 @@ bottom: -5px;
     font: var(--font-weight-extrabold) 46pt var(--inter-font-family);
     height: 222px;
     overflow: hidden;
-    /* position: relative; */
+    cursor:default;
 }
 
 #typedtext span>span{

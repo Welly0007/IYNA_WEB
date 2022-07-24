@@ -48,17 +48,18 @@
             font-weight: 700;
 }
 .publish_form{
-    width: 100%;
+    width: 60%;
     height: max-content;
     background-color: #6600cc;
     border-radius:9px;
     padding: 40px;
+    margin: 0 auto;
 }
 input:-webkit-autofill{
     -webkit-text-fill-color: white;
 }
 #publish_box>h3{
-    font: var(--font-weight-extrabold) 36pt inter;
+    font: var(--font-weight-extrabold) 32pt inter;
     color: var(--white-color);
     margin-bottom: 30px;
 }
@@ -100,7 +101,7 @@ input:-webkit-autofill{
     width: 170px;
     height: 50px;
     border-radius: 3px;
-    font: var(--font-weight-bold) 16pt inter;
+    font: var(--font-weight-bold) 12pt inter;
     background-color: #8842c4;
     color: #f7f2fb;
     cursor: pointer;
