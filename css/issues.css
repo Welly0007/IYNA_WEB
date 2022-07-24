@@ -25,7 +25,7 @@
     position: absolute;
     z-index: 0;
     box-shadow: -50px 0px 150px #843fc441;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .season_1 p{

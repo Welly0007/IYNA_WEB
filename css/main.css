@@ -39,6 +39,10 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active{
     transition: background-color 50000000000000s ease-in-out 0s;
 }
+html{
+    -webkit-tap-highlight-color: transparent;
+}
+html:focus { outline: none}
 /* defaults END */
 #preloader{
     width: 100%;
@@ -62,7 +66,7 @@ input:-webkit-autofill:active{
 }
 .welcome_sec{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     z-index: 0;
     display: flex;
@@ -567,7 +571,7 @@ footer{
     #typedtext{
         font-size: 16pt;
         height: 80px;
-        margin: 0px auto 15px;
+        margin: 0px 0 15px;
     }
     #browse_issues_butt{
         font-size: 8pt;

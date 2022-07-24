@@ -4,8 +4,8 @@
         background-size: 100%;
 }
 .courses_page #container{
-    background: url(../resources/background_CoursesPage.png) repeat;
-    background-size: cover;
+    background: url(../resources/background_CoursesPage.png) repeat  center top;
+    background-size: contain;
 }
 .courses_head .nav_but a:nth-child(3):after{
     width: 100%;
@@ -15,6 +15,7 @@
     padding: 20% 0;
     align-items: center;
 }
+
 .courses>ul{
     display: flex;
     justify-content: space-around;
@@ -38,4 +39,5 @@
         width: 150px;
         height: 196px;
     }
+    
 }
